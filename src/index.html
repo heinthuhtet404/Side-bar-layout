@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide bar</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="">
+        <!-- side menu -->
+        <div
+            class="w-1/4 bg-black flex-col justify-between hidden lg:flex  text-base px-7 py-5 text-white h-screen fixed">
+            <div>
+                <i class="fa-brands fa-discord text-4xl"></i>
+            </div>
+            <div class="grid gap-y-1">
+                <div class="flex items-center gap-x-2  px-4 py-2 hover:bg-sec hover:rounded-md ">
+                    <i class="w-7 fa-solid fa-house-chimney"></i>
+                    <p class="font-semibold ">Dashboard</p>
+                </div>
+                <div class="flex items-center gap-x-2  px-4 py-2 hover:bg-sec hover:rounded-md">
+                    <i class="w-7 fa-solid fa-users"></i>
+                    <p class="font-semibold ">Team</p>
+                </div>
+                <div class="flex items-center gap-x-2  px-4 py-2 hover:bg-sec hover:rounded-md">
+                    <i class="w-7 fa-regular fa-folder"></i>
+                    <p class="font-semibold ">Projects</p>
+                </div>
+                <div class="flex item-center gap-x-2  px-4 py-2 hover:bg-sec hover:rounded-md">
+                    <i class="w-7 fa-regular fa-calendar"></i>
+                    <p class="font-semibold ">Calendar</p>
+                </div>
+                <div class="flex items-center gap-x-2  px-4 py-2 hover:bg-sec hover:rounded-md">
+                    <i class="w-7 fa-regular fa-copy"></i>
+                    <p class="font-semibold ">Documents</p>
+                </div>
+                <div class="flex items-center gap-x-2  px-4 py-2 hover:bg-sec hover:rounded-md">
+                    <i class="w-7 fa-solid fa-bug"></i>
+                    <p class="font-semibold ">Reports</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between">
+                <div>
+                    <p class="text-base">Your teams</p>
+                </div>
+                <div class="flex flex-col gap-y-4 mt-5">
+                    <div class="flex gap-x-4">
+                        <p class="border border-white rounded-lg p x-2 text-center w-8">H</p>
+                        <p class="">Heroicons</p>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <p class="border border-white rounded-lg px-2 w-8  text-center">T</p>
+                        <p class=" ">Tailwind Labs</p>
+                    </div>
+                    <div class="flex gap-x-4">
+                        <p class="border border-white rounded-lg px-2 w-8 text-center">W</p>
+                        <p class="">Workcation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-x-5">
+                <div>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div>
+                    <p>Settings</p>
+                </div>
+            </div>
+        </div>
+        <div class=" w-full top-0 lg:w-3/4 absolute right-0">
+            <!-- top menu -->
+            <div class="flex justify-between items-center shadow-md p-5">
+                <div class="flex items-center gap-x-6">
+                    <div class="lg:hidden">
+                        <i class="fa-solid fa-bars text-2xl text-black "></i>
+                    </div>
+                    <div class="bg-gray-300 w-[1.5px] h-5 lg:hidden"></div>
+                    <div class="flex justify-between items-center gap-x-4">
+                        <i class="fa-solid fa-magnifying-glass text-xl text-gray-400 "></i>
+                        <input type="text" name="" id="" placeholder="Search..."
+                            class="outline-none h-7 hidden mobile:block">
+                    </div>
+                </div>
+                <div class="flex items-center gap-x-6">
+                    <div>
+                        <i class="fa-regular fa-bell text-xl text-gray-400 "></i>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="" class="w-10 h-10 rounded-full">
+                    </div>
+                </div>
+            </div>
+            <!-- hero content -->
+            <div class="grid md:grid-cols-3">
+                <div
+                    class="flex justify-center items-center h-[40vh] bg-black text-center font-bold text-5xl m-3 rounded-md shadow-2xl border border-gray-300 col-span-2">
+                    <img src="https://images.unsplash.com/photo-1506220926022-cc5c12acdb35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="" class=" h-full w-full object-center rounded-md">
+                </div>
+                <div
+                    class="h-[40vh] bg-gray-900 text-center font-bold text-5xl m-3 rounded-md shadow-2xl border border-gray-300 flex justify-center items-center ">
+                    <img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="" class="object-cover w-full h-full rounded-md">
+                </div>
+                <div
+                    class="h-[40vh] bg-gray-800 text-center font-bold text-5xl m-3 rounded-md shadow-2xl border border-gray-300 flex justify-center items-center ">
+                    <img src="https://images.unsplash.com/photo-1479267658415-ff274a213280?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="" class="object-cover w-full h-full rounded-md">
+                </div>
+                <div
+                    class="h-[40vh] bg-gray-700 text-center font-bold text-5xl m-3 rounded-md shadow-2xl border border-gray-300 flex justify-center items-center  col-span-2">
+                    <img src="https://images.unsplash.com/photo-1494122353634-c310f45a6d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="" class="object-cover w-full h-full rounded-md">
+                </div>
+                <div
+                    class="h-[40vh] bg-gray-900 text-center font-bold text-5xl m-3 rounded-md shadow-2xl border border-gray-300 flex justify-center items-center ">
+                    <img src="https://images.unsplash.com/photo-1506220926022-cc5c12acdb35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="" class="object-cover w-full h-full rounded-md">
+                </div>
+                <div
+                    class="h-[40vh] bg-black text-center font-bold text-5xl m-3 rounded-md shadow-2xl border border-gray-300 flex justify-center items-center ">
+                    <img src="https://images.unsplash.com/photo-1494122353634-c310f45a6d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="" class="object-cover w-full h-full rounded-md">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
